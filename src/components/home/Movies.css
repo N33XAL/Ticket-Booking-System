@@ -1,0 +1,27 @@
+.movie-card {
+    width: 15vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 2vmax 2vmax 2vmax 0;
+    transition: all 0.5s;
+    padding: 0 0 0.5vmax 0;
+    color: black;
+}
+
+.movie-card:hover {
+    transform: translateY(-1vmax);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.44);
+}
+
+.movie-card>h2 {
+    font-size: 1vmax;
+    margin:0.2vmax 0.5vmax 0 0.5vmax;
+    text-transform: capitalize;
+}
+
+.movie-card>p {
+    margin: 0 0.5vmax;
+    color: tomato;
+    font-size: 1vmax;
+}

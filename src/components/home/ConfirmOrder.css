@@ -1,0 +1,106 @@
+.main-container  {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.information-box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    width: 35vw;
+    height: 60vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    height: 60%;
+    padding: 2vmax;
+}
+
+.signup-form>h2 {
+    margin: 2vmax 0;
+}
+
+.signup-form>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.signup-form>div>input {
+    padding: 1vmax 3vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font: 300 .9vmax "Poppins";
+    outline: none;
+    margin: .5vmax 0;
+}
+
+.signup-form>div>.login-icon {
+    position: absolute;
+    transform: translateX(1vmax);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.1vmax;
+}
+
+.signup-form>div>.updatepassword-icon2{
+    position: absolute;
+    /* transform: translateX(19vmax); */
+    right: 1vmax;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: .8vmax;
+}
+
+.checkout {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    width: 27vw;
+    height: 60vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 1vmax 2vmax;
+}
+
+.checkout>h2 {
+    margin:0 0 1vmax 0;
+}
+
+.checkout>h3 {
+    margin: 1vmax 0 0 0;
+}
+
+.first {
+    margin: 0 0 1vmax 0;
+}
+
+hr{
+    margin: 1vmax 0;
+}
+
+.checkout>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout>button {
+    margin: 1.5vmax 0;
+    font-size: .9vmax;
+    border: none;
+    background-color:  #000000;
+    color: white;
+    padding: 0.5vmax 5vmax;
+    transition: all .5s;
+    width: 100%;
+}
+
+.checkout>button:hover {
+    background-color: rgba(0, 0, 0, 0.794);
+}

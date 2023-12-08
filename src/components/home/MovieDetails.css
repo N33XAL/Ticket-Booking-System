@@ -1,0 +1,90 @@
+.movieDetails-main {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-2 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.44);
+    width:30%;
+    padding: .5vmax 2vmax;
+}
+
+.col-2>h1 {
+    text-align: center;
+    margin: 1.5vmax 0;
+}
+
+.col-1>img {
+    width: 100%;
+}
+
+.col-2-1,
+.col-2-2,
+.col-2-3 {
+    margin:1.5vmax 0;
+
+}
+
+.col-2-3-1 {
+    display: flex;
+    align-items: center;
+}
+
+.col-2-3-1 > button {
+    background-color: black;    
+    border: 2px solid black;
+    color: white;
+    padding: .2vmax .5vmax;
+    transition: all .5s;
+    font-size: .9vmax;
+}
+
+.col-2-3-1  > button:hover {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.708);
+}
+
+.col-2-3-1  > input {
+    padding: .2vmax 0;
+    text-align: center;
+    width: 5vmax;
+    margin: 0 .2vmax;
+    font-size: .9vmax;
+}
+
+.col-2-3 {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.col-2-3>div> h3 {
+    color: #FF3B01;
+    font-weight: lighter;
+    font-size: 1vmax;
+    margin: 1vmax 0;
+}
+
+.col-2 >div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.col-2 >div> button:last-child {
+    margin: 1.5vmax 0;
+    font-size: .9vmax;
+    border: none;
+    background-color:  #000000;
+    color: white;
+    padding: 0.5vmax 5vmax;
+    transition: all .5s;
+}
+
+.col-2 >div> button:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.794);
+}

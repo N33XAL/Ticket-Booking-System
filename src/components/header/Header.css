@@ -1,0 +1,40 @@
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 70px;
+}
+
+.nav-main {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.nav-list ul {
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    display: flex;
+    margin-right: 5vmax;
+}
+
+.nav-list li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 1vmax;
+    color: black;
+}
+
+.nav-login>button {
+    margin:0 10px 0 0;
+    background-color: black;    
+    border: none;
+    color: white;
+    padding: .5vmax .7vmax;
+    font-size: .7vmax;
+}
