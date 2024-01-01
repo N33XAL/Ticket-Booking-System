@@ -35,12 +35,6 @@ const ConfirmOrder = () => {
         setUserData({ ...userData, [e.target.name]: e.target.value })
     }
 
-    const handleClick = () => {
-        localStorage.setItem("userdata", JSON.stringify(userData)) //used local storage to pass used data like name, email
-        localStorage.setItem("obj", JSON.stringify(obj))
-        navigate('/invoice')
-    }
-
     const handleSubmit = (e) => {
         e.preventDefault()
         localStorage.setItem("userdata", JSON.stringify(userData)) //used local storage to pass used data like name, email
