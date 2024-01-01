@@ -37,15 +37,22 @@ const ConfirmOrder = () => {
 
     const handleClick = () => {
         localStorage.setItem("userdata", JSON.stringify(userData)) //used local storage to pass used data like name, email
-        localStorage.setItem("obj", JSON.stringify(obj)) 
+        localStorage.setItem("obj", JSON.stringify(obj))
+        navigate('/invoice')
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        localStorage.setItem("userdata", JSON.stringify(userData)) //used local storage to pass used data like name, email
+        localStorage.setItem("obj", JSON.stringify(obj))
         navigate('/invoice')
     }
     return (
         <>
-        <Header />
-            <div className='main-container'>
+            <Header />
+            <form className='main-container' onSubmit={handleSubmit}>
                 <div className='information-box'>
-                    <form className='signup-form'>
+                    <div className='signup-form'>
                         <h2>Information</h2>
                         <div>
                             <FontAwesomeIcon className='login-icon' icon={faCircleUser} />
@@ -55,6 +62,7 @@ const ConfirmOrder = () => {
                                 name='name'
                                 onChange={handleChange}
                                 value={name}
+                                required
                             />
                         </div>
                         <div>
@@ -65,6 +73,7 @@ const ConfirmOrder = () => {
                                 name='email'
                                 onChange={handleChange}
                                 value={email}
+                                required
                             />
                         </div>
                         <div>
@@ -75,6 +84,7 @@ const ConfirmOrder = () => {
                                 name='address'
                                 onChange={handleChange}
                                 value={address}
+                                required
                             />
                         </div>
                         <div>
@@ -85,10 +95,12 @@ const ConfirmOrder = () => {
                                 name='country'
                                 onChange={handleChange}
                                 value={country}
+                                required
                             />
                         </div>
-                    </form>
+                    </div>
                 </div>
+
                 <div className='checkout'>
                     <h2>Checkout Summary</h2>
                     <hr></hr>
@@ -120,9 +132,9 @@ const ConfirmOrder = () => {
                         <strong>Rs. {total}</strong>
                     </div>
                     <hr></hr>
-                    <button onClick={handleClick}>Confirm payment</button>
+                    <button>Confirm payment</button>
                 </div>
-            </div>
+            </form>
         </>
     )
 }
